@@ -37,10 +37,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans  &trans  &trans    &trans   &trans       &kp ASTERISK  &kp N7        &kp N8        &kp N9        &kp MINUS  &kp BSPC
-&kp F1  &kp F2  &kp F3  &kp F4    &kp F5   &kp F6       &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp ENTER
-&kp F7  &kp F8  &kp F9  &kp F10   &kp F11  &kp F12      &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans
-                        &kp LGUI  &trans   &kp SPACE    &kp RET       &mo 4         &kp N0
+&trans  &kp F12  &kp F7  &kp F8    &kp F9  &trans       &kp ASTERISK  &kp N7        &kp N8        &kp N9        &kp MINUS  &kp BSPC
+&trans  &kp F11  &kp F4  &kp F5    &kp F6  &trans       &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp ENTER
+&trans  &kp F10  &kp F1  &kp F2    &kp F3  &trans       &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans
+                         &kp LGUI  &trans  &kp SPACE    &kp RET       &mo 4         &kp N0
             >;
 
             label = "F&NUM_PAD";
