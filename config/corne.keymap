@@ -37,6 +37,10 @@
 &mt LCTRL ESC  &kp SEMICOLON  &kp X  &kp C     &kp V  &kp B                 &kp N    &kp M  &kp P       &kp Q  &kp FSLH  &mt RIGHT_CONTROL ESC
                                      &kp LGUI  &mo 1  &mt LEFT_ALT SPACE    &kp RET  &mo 2  &lt 3 RALT
             >;
+                sensor-bindings = <
+                        &inc_dec_kp C_VOL_UP C_VOL_DN
+                        &inc_dec_kp PG_UP PG_DN>;
+                };
         };
 
         lower_layer {
