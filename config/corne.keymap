@@ -9,35 +9,17 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-        sensors {
-                compatible = "zmk,keymap-sensors";
-                sensors = <&left_encoder &right_encoder>;
-                triggers-per-rotation = <20>;
-        };
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <20>;
+    };
 };
 
 &nice_view_spi { cs-gpios = <&pro_micro 8 GPIO_ACTIVE_HIGH>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        process {
-            bindings = <&newProcess>;
-            key-positions = <10 4>;
-        };
-    };
-
-    macros {
-        newProcess: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp P &kp LS(P) &kp R &kp O &kp C &kp SPACE &kp COLON &kp SPACE &kp P &kp R &kp O &kp C &kp E &kp S &kp S &kp LPAR &kp LS(C) &kp LS(L) &kp LS(K) &kp COMMA &kp SPACE &kp LS(R) &kp LS(S) &kp LS(T) &kp RPAR &kp SPACE &kp I &kp S &kp RET &kp B &kp E &kp G &kp I &kp N &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp I &kp F &kp SPACE &kp LPAR &kp LS(R) &kp LS(S) &kp LS(T) &kp SPACE &kp EQUAL &kp SPACE &kp SQT &kp N1 &kp SQT &kp RPAR &kp SPACE &kp T &kp H &kp E &kp N &kp RET &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp E &kp L &kp S &kp E &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp I &kp F &kp SPACE &kp R &kp I &kp S &kp I &kp N &kp G &kp UNDER &kp E &kp D &kp G &kp E &kp LPAR &kp LS(C) &kp LS(L) &kp LS(K) &kp RPAR &kp SPACE &kp T &kp H &kp E &kp N &kp RET &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp E &kp N &kp D &kp SPACE &kp I &kp F &kp SEMI &kp RET &kp RET &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp E &kp N &kp D &kp SPACE &kp I &kp F &kp SEMI &kp RET &kp RET &kp E &kp N &kp D &kp SPACE &kp P &kp R &kp O &kp C &kp E &kp S &kp S &kp SEMI>;
-            label = "NEW_MACRO";
-            wait-ms = <200>;
-            tap-ms = <60>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
