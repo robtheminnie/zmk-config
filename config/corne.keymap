@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <20>;
-    };
+        sensors {
+            compatible = "zmk,keymap-sensors";
+            sensors = <&left_encoder &right_encoder>;
+            triggers-per-rotation = <20>;
+        };
 };
 
 &nice_view_spi { cs-gpios = <&pro_micro 8 GPIO_ACTIVE_HIGH>; };
@@ -38,10 +38,10 @@
                                         &kp LGUI          &mo 1               &kp SPACE    &lt 5 ENTER  &mo 2                &mo 3
             >;
 
-            sensor-bindings = <
-                        &inc_dec_kp TAB LS(TAB)
-                        &inc_dec_kp LC(Y) LC(Z
-            >;
+                sensor-bindings = <
+                            &inc_dec_kp TAB LS(TAB)
+                            &inc_dec_kp LC(Y) LC(Z
+                >;
         };
 
         lower_layer {
@@ -58,10 +58,10 @@
                          &kp LGUI  &trans  &kp SPACE    &kp RET       &mo 4         &kp N0
             >;
 
-            sensor-bindings = <
-                        &inc_dec_kp PG_UP PG_DN
-                        &inc_dec_kp C_VOL_UP C_VOL_D
-            >;
+                sensor-bindings = <
+                            &inc_dec_kp PG_UP PG_DN
+                            &inc_dec_kp C_VOL_UP C_VOL_D
+                >;
 
             label = "F&NUM_PAD";
         };
@@ -91,10 +91,10 @@
                         &trans  &trans  &trans    &trans         &trans    &trans
             >;
 
-            sensor-bindings = <
-                        &inc_dec_kp LC(RIGHT) LC(LEFT)
-                        &inc_dec_kp DOWN U
-            >;
+                sensor-bindings = <
+                            &inc_dec_kp LC(RIGHT) LC(LEFT)
+                            &inc_dec_kp DOWN U
+                >;
 
             label = "NAVIGATION";
         };
