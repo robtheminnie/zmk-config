@@ -22,6 +22,15 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+    behaviors {
+        scroll: scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -111,7 +120,7 @@
                         &trans  &trans  &trans    &trans  &trans     &trans
             >;
                 sensor-bindings = <
-                        &inc_dec_kp LC(RIGHT) LC(LEFT)
+                        &scroll
                         &inc_dec_kp DOWN UP>;
 
             label = "MOUSE";
