@@ -23,9 +23,9 @@
     combos { compatible = "zmk,combos"; };
 
     behaviors {
-        new_behavior: new_behavior {
+        scroll: scroll {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "NEW_BEHAVIOR";
+            label = "SCROLL";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
