@@ -120,8 +120,8 @@
                         &trans  &trans  &trans    &trans  &trans     &trans
             >;
                 sensor-bindings = <
-                        &scroll
-                        &inc_dec_kp DOWN UP>;
+                        &inc_dec_kp DOWN UP
+                        &scroll>;
 
             label = "MOUSE";
         };
