@@ -2,5 +2,5 @@
     /* Remove encoder nodes completely for the dongle build */
     /delete-node/ encoder_left;
     /delete-node/ encoder_right;
+    /delete-node/ sensors;
 };
-
