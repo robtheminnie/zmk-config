@@ -1,10 +1,18 @@
 / {
-    /* Remove encoder nodes completely for the dongle build */
-    /delete-node/ encoder_left;
-    /delete-node/ encoder_right;
+    /* Define dummy encoder nodes so references resolve */
+    encoder_left: encoder_left {
+        compatible = "zmk,encoder";
+        status = "disabled";
+    };
 
-    /* Replace the sensors node with an empty one */
+    encoder_right: encoder_right {
+        compatible = "zmk,encoder";
+        status = "disabled";
+    };
+
+    /* Override sensors so it doesn't try to use them */
     sensors {
+        compatible = "zmk,sensors";
         status = "disabled";
     };
 };
