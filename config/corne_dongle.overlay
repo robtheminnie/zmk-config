@@ -1,16 +1,16 @@
 / {
-    /* Define dummy encoder nodes so references resolve */
-    encoder_left: encoder_left {
+    /* Define dummy encoder nodes just to satisfy label references */
+    left_encoder: encoder_left {
         compatible = "zmk,encoder";
         status = "disabled";
     };
 
-    encoder_right: encoder_right {
+    right_encoder: encoder_right {
         compatible = "zmk,encoder";
         status = "disabled";
     };
 
-    /* Override sensors so it doesn't try to use them */
+    /* Override the sensors node so it doesn’t bind to those encoders */
     sensors {
         compatible = "zmk,sensors";
         status = "disabled";
