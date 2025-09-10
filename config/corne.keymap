@@ -93,7 +93,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans    &trans        &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans         &trans    &trans
+                        &trans  &trans  &BSPC     &trans         &trans    &trans
             >;
                 sensor-bindings = <
                         &inc_dec_kp LC(RIGHT) LC(LEFT)
@@ -114,10 +114,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans           &trans         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK          &mkp MCLK        &mkp RCLK      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans             &trans
             >;
                 sensor-bindings = <
                         &inc_dec_kp DOWN UP
